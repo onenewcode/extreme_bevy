@@ -1,0 +1,7 @@
+# 设置编译平台
+[build]
+target = "wasm32-unknown-unknown"
+
+# 设置目标平台运行环境
+[target.wasm32-unknown-unknown]
+runner = "wasm-server-runner"

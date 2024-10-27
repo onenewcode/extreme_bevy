@@ -1,0 +1,11 @@
+[package]
+name = "extreme_bevy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14"
+bevy_ggrs = { version = "0.16", features = ["wasm-bindgen"] }
+bevy_matchbox = { version = "0.10", features = ["ggrs"] }
+[profile.dev.package."*"]
+opt-level = 2
