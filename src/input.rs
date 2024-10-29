@@ -2,6 +2,7 @@ use bevy::{input::ButtonInput, math::Vec2, prelude::{Commands, KeyCode, Res}, ut
 use bevy_ggrs::{LocalInputs, LocalPlayers};
 
 use crate::Config;
+
 const INPUT_UP: u8 = 1 << 0;
 const INPUT_DOWN: u8 = 1 << 1;
 const INPUT_LEFT: u8 = 1 << 2;
@@ -24,7 +25,6 @@ pub fn direction(input: u8) -> Vec2 {
     }
     direction
 }
-
 pub fn read_local_inputs(
     mut commands: Commands,
     keys: Res<ButtonInput<KeyCode>>,
